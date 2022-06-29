@@ -48,6 +48,8 @@ const styles = {
     display: "flex",
     flexWrap: "wrap",
     opacity: 0.4,
+    // zIndex: -1,
+    // position: "absolute",
   },
   block: {
     backgroundColor: "blue",

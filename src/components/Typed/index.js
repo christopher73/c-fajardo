@@ -17,7 +17,7 @@ export default function TypedString() {
   useEffect(() => {
     const typedStrings = [
       `
-    root@.~#cowsay my ip
+    root@.~#cowsay your ip
    __${ip
      .split("")
      .map(() => "_")
@@ -46,11 +46,11 @@ export default function TypedString() {
       loop: false,
       shuffle: false,
     };
-    let typed = new Typed(el, options);
+    let typed = new Typed(el, { ...options });
     return () => typed.destroy();
   }, [ip]);
   return (
-    <div className="side-bar-terminal">
+    <div className="text-green-500 p-2 bg-black rounded ">
       <pre ref={(e) => (el = e)} />
     </div>
   );

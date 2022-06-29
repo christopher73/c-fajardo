@@ -1,23 +1,23 @@
-import React, { useContext } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
   faFacebook,
-} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import ThemeContext from '../DarkMode/ThemeContext';
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import ThemeContext from "../DarkMode/ThemeContext";
 
 export default function Footer() {
   const theme = useContext(ThemeContext);
   const stylo = {
-    fontFamily: 'Noto Sans JP',
+    fontFamily: "Noto Sans JP",
     ...theme,
   };
   let iconStyle = {
-    color: '#027373',
-    fontSize: '2em',
-    margin: '7px',
+    color: "#027373",
+    fontSize: "2em",
+    margin: "7px",
   };
   return (
     <footer style={stylo} className="footer ">

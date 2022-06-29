@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import ThemeContext from "../../components/DarkMode/ThemeContext";
+import ThemeContext from "../../components/WithDarkMode/WithDarkMode";
 import ProjectList from "../../components/ProjectList";
 import { allProjects } from "../../data/constants";
-import ScrollUp from "../../components/ScrollUp/ScrollUp";
 import "./style.css";
 
 const projectDivs = allProjects.map((elem, i) =>

@@ -9,9 +9,11 @@ import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import resume from "./cfajardo_resume.pdf";
 export default function SocialMedia() {
   return (
-    <div className="social-icons">
+    <div className="flex flex-row w-full justify-around mt-auto">
       <a
-        className="social-icon-link"
+        className="inline-block p-1.5 text-lg text-white
+         font-medium leading-tight 
+         uppercase rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.linkedin.com/in/cfajardo112/"
@@ -19,7 +21,9 @@ export default function SocialMedia() {
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
       <a
-        className="social-icon-link"
+        className="inline-block p-1.5 text-lg text-white
+         font-medium leading-tight 
+         uppercase rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.facebook.com/cffr90"
@@ -27,7 +31,9 @@ export default function SocialMedia() {
         <FontAwesomeIcon icon={faFacebook} />
       </a>
       <a
-        className="social-icon-link"
+        className="inline-block p-1.5 text-lg text-white
+         font-medium leading-tight 
+         uppercase rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://github.com/christopher73"
@@ -35,7 +41,9 @@ export default function SocialMedia() {
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
-        className="social-icon-link"
+        className="inline-block p-1.5 text-lg text-white
+         font-medium leading-tight 
+         uppercase rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="mailto: cfajardo112@gmail.com"
@@ -43,7 +51,9 @@ export default function SocialMedia() {
         <FontAwesomeIcon icon={faEnvelope} />
       </a>
       <a
-        className="social-icon-link"
+        className="inline-block p-1.5 text-lg text-white
+         font-medium leading-tight 
+         uppercase rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href={resume}

@@ -1,8 +1,8 @@
-import Chart from 'chart.js';
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import Chart from "chart.js";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 class Project extends React.Component {
   constructor(props) {
@@ -20,15 +20,15 @@ class Project extends React.Component {
   }
 
   componentDidMount() {
-    const myChartRef = this.chartRef.current.getContext('2d');
+    const myChartRef = this.chartRef.current.getContext("2d");
     new Chart(myChartRef, this.state.chartPower);
   }
   chartRef = React.createRef();
   render() {
     let styloLink = {
-      color: 'rgb(2, 115, 115)',
-      marginLeft: '20px',
-      float: 'right',
+      color: "rgb(2, 115, 115)",
+      marginLeft: "20px",
+      float: "right",
     };
 
     return (
@@ -62,15 +62,15 @@ class Project extends React.Component {
             <div className="col-md-6 col-sm-12 col-12">
               <p
                 className="h5 font-weight-lighter"
-                style={{ lineHeight: '1.3' }}
+                style={{ lineHeight: "1.3" }}
               >
                 {this.state.desc}
               </p>
-              {this.state.descLong.map(function(elem, i) {
+              {this.state.descLong.map(function (elem, i) {
                 return (
                   <p
                     className="h5 font-weight-lighter"
-                    style={{ lineHeight: '1.3' }}
+                    style={{ lineHeight: "1.3" }}
                     key={i}
                   >
                     {elem}
@@ -81,7 +81,7 @@ class Project extends React.Component {
 
             <div className="col-md-6 col-sm-12 col-12 text-center">
               <img
-                style={{ height: '400px', maxWidth: '100%' }}
+                style={{ height: "400px", maxWidth: "100%" }}
                 src={this.state.pictureLink}
                 alt={this.state.title}
               />
@@ -92,7 +92,7 @@ class Project extends React.Component {
               <canvas id="myChart" ref={this.chartRef} />
             </div>
           </div>
-        </div>{' '}
+        </div>
       </div>
     );
   }
