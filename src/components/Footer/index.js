@@ -10,7 +10,7 @@ import ThemeContext from "../DarkMode/ThemeContext";
 
 export default function Footer() {
   const theme = useContext(ThemeContext);
-  const stylo = {
+  const style = {
     fontFamily: "Noto Sans JP",
     ...theme,
   };
@@ -20,7 +20,7 @@ export default function Footer() {
     margin: "7px",
   };
   return (
-    <footer style={stylo} className="footer ">
+    <footer style={style} className="footer ">
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center p-3 m-auto">

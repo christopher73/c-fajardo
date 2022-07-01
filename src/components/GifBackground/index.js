@@ -17,25 +17,28 @@ const fetchGiphyAPI = (word) =>
 export const GifBackground = ({ word }) => {
   const [blocks, setBlocks] = useState([]);
 
-  async function getData() {
-    if (word !== "") {
-      let data = await fetchGiphyAPI(word);
-      console.log(data);
-      setBlocks(data);
-    } else {
-      setBlocks([]);
-    }
-  }
-
   useEffect(() => {
+    async function getData() {
+      if (word !== "") {
+        let data = await fetchGiphyAPI(word);
+        console.log(data);
+        setBlocks(data);
+      } else {
+        setBlocks([]);
+      }
+    }
     getData();
   }, [word]);
 
   return (
     <div style={styles.container}>
       {blocks.map((elem, i) => (
-        <div key={i} alt={elem.title} style={styles.block}>
-          <img style={styles.blockImage} src={elem.images.original.url} />
+        <div key={i} style={styles.block}>
+          <img
+            alt={elem.title}
+            style={styles.blockImage}
+            src={elem.images.original.url}
+          />
         </div>
       ))}
     </div>
@@ -44,22 +47,22 @@ export const GifBackground = ({ word }) => {
 
 const styles = {
   container: {
-    width: "100%",
     display: "flex",
     flexWrap: "wrap",
+    alignItems: "flex-start",
+    justifyContent: "center",
     opacity: 0.4,
-    // zIndex: -1,
-    // position: "absolute",
+    zIndex: -1,
+    // marginLeft: "auto",
+    height: "100hv",
+    position: "absolute",
   },
   block: {
-    backgroundColor: "blue",
-    width: "33.333%",
-    height: "20vh",
-    // borderStyle: "solid",
-    // borderWidth: 0.5,
-    // borderColor: "red",
-    // zIndex: -1,
-    // position: "absolute",
+    display: "flex",
+    // alignItems: "flex-end",
+    //backgroundColor: "blue",
+    width: 200,
+    height: 200,
   },
   blockImage: {
     width: "100%",

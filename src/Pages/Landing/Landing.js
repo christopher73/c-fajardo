@@ -1,25 +1,17 @@
-import React, { useContext, useState } from "react";
-import ThemeContext from "../../components/WithDarkMode/WithDarkMode";
+import React, { useState } from "react";
 import { GifBackground } from "../../components/GifBackground";
 
 export default function Landing() {
   const [word, setWord] = useState("");
-  const theme = useContext(ThemeContext);
-  const style = {
-    fontFamily: "Noto Sans JP",
-    ...theme,
-  };
+
   const handleClick = (clickedWord) => {
     setWord((s) => (s === clickedWord ? "" : clickedWord));
   };
-  const landingPhrase = "ramen tech NYC knicks kids sushi";
+  const landingPhrase = "family ramen tech NYC knicks sushi code";
   return (
-    <div
-      style={{ ...style }}
-      className="flex w-full flex-col items-center justify-center"
-    >
-      <GifBackground word={word} />
-      <div className="flex flex-col items-center absolute">
+    <div className="flex flex-col items-center justify-center ">
+      <div className="flex flex-col items-center">
+        <GifBackground word={word} />
         <div className="flex flex-wrap justify-center">
           <img
             className="p-1 bg-stone-800 border max-w-full h-auto rounded"

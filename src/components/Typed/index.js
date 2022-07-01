@@ -50,7 +50,7 @@ export default function TypedString() {
     return () => typed.destroy();
   }, [ip]);
   return (
-    <div className="text-green-500 p-2 bg-black rounded ">
+    <div className="text-green-300 p-2 bg-stone-900 rounded ">
       <pre ref={(e) => (el = e)} />
     </div>
   );

@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Links from "./Links";
 import TypedString from "../Typed";
 import chris from "../../assets/chris.jpeg";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import ThemeContext from "../WithDarkMode/WithDarkMode";
 
 export default function SideBar({ darkMode, setDarkMode }) {
-  const themeStyles = {
-    dark: { backgroundColor: "#121317", color: "#f2f2f2" },
-    light: { backgroundColor: "white", color: "#292c35" },
+  const { backgroundColor } = useContext(ThemeContext);
+  const styles = {
+    root: {
+      fontFamily: "Noto Sans JP",
+      backgroundColor,
+    },
   };
   return (
-    <div className="flex flex-col min-h-full justify-top fade-in p-2 bg-white drop-shadow-2xl">
+    <div
+      style={{ ...styles.root }}
+      className="flex flex-col h-screen justify-top fade-in p-2 w-max-1/6"
+    >
       <div className="flex flex-row justify-between p-2 pt-4">
         <Link to="/">
           <img alt="logo" src="./favicon.ico" />
@@ -22,7 +29,7 @@ export default function SideBar({ darkMode, setDarkMode }) {
         </label>
       </div>
 
-      <img
+      {/* <img
         className="p-1 bg-stone-900 border max-w-full h-auto rounded"
         src={chris}
         alt="Christopher Fajardo"
@@ -36,7 +43,7 @@ export default function SideBar({ darkMode, setDarkMode }) {
             💻
           </span>
         </h1>
-      </div>
+      </div> */}
       <Links />
       <SocialMedia />
       <TypedString />

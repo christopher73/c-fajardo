@@ -1,22 +1,23 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Landing from "./pages/Landing";
-import Blog from "./pages/Blog";
-import { allProjects } from "./data/constants";
-import Project from "./components/Project";
-import { chris } from "./data/constants";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+
+import Landing from "./pages/Landing/Landing";
+import Blog from "./pages/Blog/Blog";
+import ContactMe from "./pages/ContactMe/ContactMe";
+import Stack from "./pages/Stack/Stack";
+import Projects from "./pages/Projects/Projects";
+import Project from "./components/Project";
+
 import { WithSideBar } from "./components/WithSideBar/WithSideBar";
 import ThemeContext from "./components/WithDarkMode/WithDarkMode";
-import ContactMe from "./pages/ContactMe/ContactMe";
-import Technologies from "./pages/Technologies/Technologies";
-import Projects from "./pages/Projects";
+import { chris, allProjects } from "./data/constants";
 
 AOS.init({ duration: 1000 });
 console.log(chris);
 
-let routes = allProjects.map(function (element) {
+let projectsRoutes = allProjects.map(function (element) {
   return (
     <Route
       key={element.title}
@@ -24,11 +25,11 @@ let routes = allProjects.map(function (element) {
       path={element.localLink}
       component={() => {
         const theme = useContext(ThemeContext);
-        const stylo = {
+        const style = {
           fontFamily: "Noto Sans JP",
           ...theme,
         };
-        return <Project stylo={stylo} project={element} />;
+        return <Project style={style} project={element} />;
       }}
     />
   );
@@ -40,10 +41,10 @@ function App() {
       <WithSideBar>
         <Route exact path="/" component={Landing} />
         <Route exact path="/projects" component={Projects} />
-        <Route exact path="/contact-me" component={ContactMe} />
+        <Route exact path="/contact_me" component={ContactMe} />
         <Route exact path="/blog" component={Blog} />
-        <Route exact path="/current-stack" component={Technologies} />
-        {routes}
+        <Route exact path="/stack" component={Stack} />
+        {projectsRoutes}
       </WithSideBar>
     </Router>
   );
