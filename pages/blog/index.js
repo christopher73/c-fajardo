@@ -16,7 +16,7 @@ export default function Blog() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   return (
     <div className="flex flex-col m-3">

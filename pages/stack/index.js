@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 export default function Stack() {
   return (
     <div className="container my-24 px-6 mx-auto">
@@ -8,40 +8,44 @@ export default function Stack() {
         <div className="grid lg:gap-x-12 md:grid-cols-3">
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="js"
-                src="./assets/img/icons/js.svg"
-                style={{ width: "80px", height: "60px" }}
+                src="/assets/img/icons/js.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">Javascript</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="ts"
-                src="./assets/img/icons/ts.svg"
-                style={{ width: "80px", height: "60px" }}
+                src="/assets/img/icons/ts.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">TypeScript</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="js"
-                src="./assets/img/icons/cpp.svg"
-                style={{ width: "80px", height: "60px" }}
+                src="/assets/img/icons/cpp.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">C++</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="js"
-                src="./assets/img/icons/bash.svg"
-                style={{ width: "80px", height: "60px" }}
+                src="/assets/img/icons/bash.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">Bash</h3>
@@ -53,40 +57,44 @@ export default function Stack() {
         <div className="grid lg:gap-x-12 md:grid-cols-3">
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="react"
-                src="./assets/img/icons/react.svg"
-                style={{ width: "80px", height: "50px" }}
+                src="/assets/img/icons/react.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">React</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="react"
-                src="./assets/img/icons/reactNative.svg"
-                style={{ width: "80px", height: "50px" }}
+                src="/assets/img/icons/reactNative.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">React Native</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="react"
-                src="./assets/img/icons/redux.svg"
-                style={{ width: "80px", height: "50px" }}
+                src="/assets/img/icons/redux.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">Redux</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
-              <img
+              <Image
                 alt="react"
-                src="./assets/img/icons/expressjs.svg"
-                style={{ width: "80px", height: "50px" }}
+                src="/assets/img/icons/expressjs.svg"
+                height={60}
+                width={80}
               />
             </div>
             <h3 className="text-2xl font-bold  mb-4">ExpressJS</h3>
