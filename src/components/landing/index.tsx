@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { GifBackground } from "../GifBackground";
 import Image from "next/image";
+import { useState } from "react";
+import { GifBackground } from "../GifBackground";
 
 export function Landing() {
   const [word, setWord] = useState("");
 
-  const handleClick = (clickedWord) => {
+  const handleClick = (clickedWord: string) => {
     setWord((s) => (s === clickedWord ? "" : clickedWord));
   };
   const landingPhrase = "family ramen tech NYC knicks sushi code";

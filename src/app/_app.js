@@ -1,12 +1,13 @@
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
+import Head from "next/head";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import SideBar from "../components/SideBar/SideBar";
 import WithDarkMode from "../components/WithDarkMode/WithDarkMode";
-import { useRouter } from "next/router";
 import "../styles/globals.css";
 import "../styles/switch.css";
-import Head from "next/head";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
+
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 function MyApp({ Component, pageProps }) {
