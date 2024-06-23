@@ -1,11 +1,12 @@
-import React, { useContext } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLinkedin,
-  faGithub,
   faFacebook,
+  faGithub,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import React, { useContext } from "react";
 import ThemeContext from "../DarkMode/ThemeContext";
 
 export default function Footer() {
@@ -24,20 +25,20 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center p-3 m-auto">
-            <a href="https://www.linkedin.com/in/cffr90/">
+            <Link href="https://www.linkedin.com/in/cffr90/">
               <FontAwesomeIcon style={iconStyle} icon={faLinkedin} />
-            </a>
-            <a href="https://www.facebook.com/cffr90">
+            </Link>
+            <Link href="https://www.facebook.com/cffr90">
               <FontAwesomeIcon style={iconStyle} icon={faFacebook} />
-            </a>
-            <a href="https://github.com/christopher73">
+            </Link>
+            <Link href="https://github.com/christopher73">
               <FontAwesomeIcon style={iconStyle} icon={faGithub} />
-            </a>
-            <a href="mailto: christopher.fajardo73@gmail.com">
+            </Link>
+            <Link href="mailto: christopher.fajardo73@gmail.com">
               <FontAwesomeIcon style={iconStyle} icon={faEnvelope} />
-            </a>
+            </Link>
             <p className="h5 text-secondary" to="/">
-              Christopher © 2019
+              Christopher © 2024
             </p>
           </div>
         </div>

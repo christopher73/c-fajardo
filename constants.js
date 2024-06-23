@@ -2,7 +2,7 @@ export const allProjects = [
   {
     title: "Ratemydeliveries.com",
     localLink: "ratemydeliveries",
-    gitLink: "https://github.com/christopher73/ratemydeliveries",
+    gitLink: "https://github.com/farm16/ratemydeliveries",
     externalLink: "https://ratemydeliveries.com/",
     isFeatured: true,
     pictureLink: "/assets/img/ratemydeliveries.png",
@@ -67,7 +67,7 @@ export const allProjects = [
   {
     title: "Starkclass.com",
     localLink: "starkclass",
-    gitLink: "https://github.com/christopher73/starkclass-client",
+    gitLink: "https://github.com/farm16/starkclass-client",
     externalLink: "https://starkclass.com",
     isFeatured: true,
     backgroundLink: "/assets/img/starkclass.jpg",
@@ -154,7 +154,7 @@ export const allProjects = [
   {
     title: "MLB ScoreBox",
     localLink: "scorebox",
-    gitLink: "https://github.com/christopher73/BoxScore",
+    gitLink: "https://github.com/farm16/BoxScore",
     externalLink: "https://node-redis-express.herokuapp.com",
     isFeatured: true,
     backgroundLink: "/assets/img/scoreBox.png",
@@ -231,7 +231,7 @@ export const allProjects = [
   {
     title: "Redux Bike Rental App",
     localLink: "bikerental",
-    gitLink: "https://github.com/christopher73/bikeRental",
+    gitLink: "https://github.com/farm16/bikeRental",
     externalLink: "https://tranquil-falls-97480.herokuapp.com/",
     isFeatured: true,
     backgroundLink: "/assets/img/bikerental.svg",
@@ -299,7 +299,7 @@ export const allProjects = [
   {
     title: "Scrapping The NYT",
     localLink: "newsscraper",
-    gitLink: "https://github.com/christopher73/news_app",
+    gitLink: "https://github.com/farm16/news_app",
     externalLink: "https://node-web-scraper-app.herokuapp.com/",
     isFeatured: true,
     backgroundLink: "/assets/img/newsScraper.jpg",
@@ -377,7 +377,7 @@ export const allProjects = [
   {
     title: "React Native App",
     localLink: "nicapp",
-    gitLink: "https://github.com/christopher73/nicMobileApp",
+    gitLink: "https://github.com/farm16/nicMobileApp",
     externalLink: "https://c-fajardo.com/nicapp",
     isFeatured: true,
     backgroundLink: "/assets/img/scoreBox.png",
@@ -454,8 +454,8 @@ export const allProjects = [
   {
     title: "CleanMeUp",
     localLink: "cleanmeup",
-    gitLink: "https://github.com/christopher73/cleanFB",
-    externalLink: "https://github.com/christopher73/cleanFB",
+    gitLink: "https://github.com/farm16/cleanFB",
+    externalLink: "https://github.com/farm16/cleanFB",
     isFeatured: false,
     pictureLink: "/assets/img/cleanMeUp.gif",
     year: "2019",
@@ -532,7 +532,7 @@ export const allProjects = [
   {
     title: "LIRI",
     localLink: "liri",
-    gitLink: "https://github.com/christopher73/LIRI/",
+    gitLink: "https://github.com/farm16/LIRI/",
     externalLink:
       "https://drive.google.com/file/d/1okAk9QhAaTF9zHUp3BR7UrsdrzABdk3r/view",
     isFeatured: false,
@@ -612,7 +612,7 @@ export const allProjects = [
   {
     title: "Flight Search App",
     localLink: "flight-search-app",
-    gitLink: "https://github.com/christopher73/Project_1",
+    gitLink: "https://github.com/farm16/Project_1",
     externalLink: "https://christopher73.github.io/Project_1/",
     isFeatured: false,
     pictureLink: "/assets/img/flightSearchApp.gif",
@@ -688,7 +688,7 @@ export const allProjects = [
   {
     title: "Using Giphy's API (GifTastic)",
     localLink: "giphy",
-    gitLink: "https://github.com/christopher73/Project_1",
+    gitLink: "https://github.com/farm16/Project_1",
     externalLink: "https://christopher73.github.io/GifTastic/",
     isFeatured: false,
     pictureLink: "/assets/img/usingGiphy.gif",
@@ -762,7 +762,7 @@ export const allProjects = [
   {
     title: "Friend Finder",
     localLink: "friend-finder",
-    gitLink: "https://github.com/christopher73/friend-finder",
+    gitLink: "https://github.com/farm16/friend-finder",
     externalLink: "https://node-friend-finder-app.herokuapp.com/",
     isFeatured: true,
     backgroundLink: "/assets/img/friendFinder.jpg",
@@ -841,7 +841,7 @@ export const allProjects = [
   {
     title: "The Gram",
     localLink: "the-gram",
-    gitLink: "https://github.com/christopher73/The_Gram_Part_1",
+    gitLink: "https://github.com/farm16/The_Gram_Part_1",
     externalLink: "https://stormy-gorge-82248.herokuapp.com/",
     isFeatured: true,
     pictureLink: "/assets/img/thegram.gif",

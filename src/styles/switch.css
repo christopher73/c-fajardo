@@ -4,6 +4,7 @@
   width: 70px;
   height: 40px;
   padding: 6.5px;
+  /* responsive */
 }
 
 .switch input {
@@ -28,6 +29,7 @@
   background-size: contain;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  /* responsive */
 }
 
 .slider:before {
@@ -44,6 +46,7 @@
   background-size: contain;
   -webkit-transition: 0.63s;
   transition: 0.63s;
+  /* responsive */
 }
 
 input:checked + .slider {
@@ -67,8 +70,10 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  /* responsive */
 }
 
 .slider.round:before {
   border-radius: 50%;
+  /* responsive */
 }

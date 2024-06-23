@@ -1,6 +1,11 @@
-import React, { useEffect, useCallback, useState } from "react";
+"use client";
+import { DarkModeContext } from "@/components/WithDarkMode/WithDarkMode";
+import { useCallback, useContext, useEffect, useState } from "react";
+
 export default function Blog() {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState<any>([]);
+  const { darkMode } = useContext(DarkModeContext);
+
   const api = "https://hn.algolia.com/api/v1/search?tags=front_page";
   // http://hn.algolia.com/api/v1/search?tags=front_page
   const fetchData = useCallback(async () => {
@@ -8,6 +13,7 @@ export default function Blog() {
     try {
       const response = await fetch(api);
       const res = await response.json();
+      // tslint:disable-next-line: no-console
       setNews([...res.hits]);
     } catch (error) {
       alert(error);
@@ -19,7 +25,7 @@ export default function Blog() {
   }, [fetchData]);
 
   return (
-    <div className="flex flex-col m-3">
+    <div>
       <div
         className="bg-yellow-100 self-center text-center rounded-lg py-5 px-6 text-base text-yellow-700 mb-3"
         role="alert"
@@ -36,7 +42,7 @@ export default function Blog() {
         </a>{" "}
         =)
       </div>
-      {news.map((elem, i) => (
+      {news.map((elem: any, i: number) => (
         <div className="flex mb-3" key={i}>
           <p className="mb-4">
             <svg

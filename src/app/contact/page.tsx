@@ -1,4 +1,3 @@
-import React from "react";
 export default function ContactMe() {
   return (
     <form className="d-flex flex-column justify-content-center align-items-stretch flex-grow-1">
@@ -43,7 +42,7 @@ export default function ContactMe() {
       </div>
       <div className="form-group px-4">
         <label htmlFor="exampleInputMessage">Message:</label>
-        <textarea type="text" className="form-control" />
+        <textarea className="form-control" />
       </div>
       <button
         type="submit"

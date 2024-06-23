@@ -1,15 +1,14 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLinkedin,
-  faGithub,
   faFacebook,
+  faGithub,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SocialMedia() {
   return (
-    <div className="flex flex-row w-full justify-around mt-auto">
+    <li className="flex flex-row justify-center">
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
@@ -36,7 +35,7 @@ export default function SocialMedia() {
           rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
-        href="https://github.com/christopher73"
+        href="https://github.com/farm16"
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>
@@ -56,10 +55,10 @@ export default function SocialMedia() {
           rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
-        href={"/assets/cfajardo_resume.pdf"}
+        href={"/assets/Christopher_Fajardo_resume_2024.pdf"}
       >
         <FontAwesomeIcon icon={faFile} />
       </a>
-    </div>
+    </li>
   );
 }

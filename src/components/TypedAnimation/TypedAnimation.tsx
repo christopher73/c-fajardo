@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 
 export default function TypedString() {
   const [ip, setIp] = useState("no ip ");
 
-  let el = useRef(null);
+  let el = useRef<any>(null);
 
   const getIp = async () => {
     const response = await fetch("https://api.ipify.org?format=json");
@@ -49,10 +49,29 @@ export default function TypedString() {
     let typed = new Typed(el, { ...options });
     return () => typed.destroy();
   }, [ip]);
+
+  const styles: { pre: React.CSSProperties } = {
+    // make it responsive
+    pre: {
+      fontFamily: "monospace",
+      fontSize: "1em",
+      wordWrap: "break-word",
+      textAlign: "left",
+      // responsive design
+    },
+  };
+
   return (
-    <div className="text-green-300 p-2 bg-stone-900 rounded ">
-      <pre ref={(e) => (el = e)} />
-    </div>
+    // make background color dark and text color light
+    <li
+      className="flex flex-col bg-gray-900 text-green-400 p-2"
+      style={{
+        marginTop: 16,
+      }}
+    >
+      {/* @ts-ignore */}
+      <pre style={styles.pre} ref={(e) => (el = e)} />
+    </li>
   );
 }
 
