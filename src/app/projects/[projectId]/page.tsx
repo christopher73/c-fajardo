@@ -1,17 +1,20 @@
 "use client";
 
+import { DarkModeContext } from "@/components/WithDarkMode/WithDarkMode";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
 import { Pie } from "react-chartjs-2";
 import { allProjects } from "../../../../constants";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Project = ({ params }: { params: { projectId: string } }) => {
+  const { darkMode } = useContext(DarkModeContext);
   const { projectId } = params;
 
   console.log("project >>>", projectId);
@@ -22,8 +25,11 @@ const Project = ({ params }: { params: { projectId: string } }) => {
   return projectItem ? (
     <div
       // allow scroll
-      className="flex flex-col p-16 items-center justify-center overflow-y-auto"
-      key={projectItem.localLink}
+      className={
+        "flex flex-col p-5 items-center justify-center h-full" +
+        (darkMode ? " text-white" : " text-black") +
+        (darkMode ? " bg-black" : " bg-white")
+      }
     >
       <div className="flex justify-center">
         <h1 className="text-5xl font-bold mt-0 mb-6 ">

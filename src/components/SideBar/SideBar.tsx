@@ -48,14 +48,14 @@ export default function SideBar() {
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <ul className="space-y-2 font-medium">
-            <li className="flex items-center justify-between">
+            <li className="flex items-center justify-between p-3">
               <Link href="/">
                 <Image alt="logo" src="/favicon.ico" width={50} height={50} />
               </Link>
-              <label className="switch">
+              {/* <label className="switch">
                 <input onClick={() => setDarkMode(!darkMode)} type="checkbox" />
                 <span className="slider round"></span>
-              </label>
+              </label> */}
             </li>
             <Links />
             <SocialMedia />
