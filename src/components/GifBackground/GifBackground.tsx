@@ -57,6 +57,7 @@ export const GifBackground = (props: GifBackgroundProps) => {
   return (
     <div style={css}>
       {blocks.map((elem, i) => {
+        console.log("elem", elem);
         if (!elem.images.original.url) return null;
         return (
           <Image
