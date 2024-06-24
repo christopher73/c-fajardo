@@ -18,7 +18,7 @@ const handleClick = () => {
   }
 };
 
-const Button = (props) => {
+const Button = () => {
   const styles: { root: CSSProperties } = {
     root: {
       position: "fixed",
@@ -57,7 +57,7 @@ const Button = (props) => {
 
 export default function SideBar() {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
-  const styles = {
+  const styles: { root: CSSProperties; ul: CSSProperties } = {
     root: {
       fontFamily: "Noto Sans JP",
     },
@@ -115,24 +115,4 @@ export default function SideBar() {
       <Button />
     </div>
   );
-}
-{
-  /**
-   * @todo add below
-   * <img
-   *     className="p-1 bg-stone-900 border max-w-full h-auto rounded"
-   *     src={chris}
-   *     alt="Christopher Fajardo"
-   *   />
-   *
-   *   <div className="bg-stone-900 text-lg p-2 text-left text-stone-100 rounded my-1">
-   *     <h1>I’m Chris 👋🏽</h1>
-   *     <h1>
-   *       Software Engineer{" "}
-   *       <span role="img" aria-label="emoji">
-   *         💻
-   *       </span>
-   *     </h1>
-   *   </div>
-   *  */
 }
