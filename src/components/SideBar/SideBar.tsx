@@ -99,6 +99,16 @@ export default function SideBar() {
             <Links />
             <SocialMedia />
             <TypedString />
+            <li className="flex items-center justify-center py-4">
+              <a
+                href="https://github.com/farm16/c-fajardo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-100 underline hover:text-stone-200 text-sm"
+              >
+                handcrafted with ❤️ + 🍜 + NextJS
+              </a>
+            </li>
           </ul>
         </div>
       </aside>
