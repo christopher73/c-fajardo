@@ -17,20 +17,21 @@ export default function TypedString() {
   useEffect(() => {
     const typedStrings = [
       `
-    root@.~#cowsay your ip
+    $ curl ifconfig.co | cowsay
    __${ip
      .split("")
      .map(() => "_")
      .join("")}
-  / ${ip
+  ( ${ip
     .split("")
     .map(() => " ")
-    .join("")} \\
-  | ${ip} |
-  \\__${ip
+    .join("")} )
+  ( Your IP is: )
+  ( ${ip} )
+  (__${ip
     .split("")
     .map(() => "_")
-    .join("")}/
+    .join("")})
      /
     /
   ^__^
