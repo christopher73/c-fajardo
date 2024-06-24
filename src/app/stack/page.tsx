@@ -1,7 +1,19 @@
+"use client";
+import { DarkModeContext } from "@/components/WithDarkMode/WithDarkMode";
 import Image from "next/image";
+import { useContext } from "react";
+
 export default function Stack() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="container my-24 px-6 mx-auto">
+    <div
+      className="container py-24 mx-auto"
+      style={{
+        backgroundColor: darkMode ? "black" : "white",
+        color: darkMode ? "white" : "black",
+        width: "100%",
+      }}
+    >
       <section className=" text-center">
         <h2 className="text-3xl font-bold mb-12">PROGRAMING LANGUAGES</h2>
         <div className="grid lg:gap-x-12 md:grid-cols-3">

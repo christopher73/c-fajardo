@@ -24,12 +24,12 @@ const Project = ({ params }: { params: { projectId: string } }) => {
 
   return projectItem ? (
     <div
-      // allow scroll
-      className={
-        "flex flex-col p-5 items-center justify-center h-full" +
-        (darkMode ? " text-white" : " text-black") +
-        (darkMode ? " bg-black" : " bg-white")
-      }
+      style={{
+        backgroundColor: darkMode ? "black" : "white",
+        color: darkMode ? "white" : "black",
+        height: "100vh",
+        padding: "20px",
+      }}
     >
       <div className="flex justify-center">
         <h1 className="text-5xl font-bold mt-0 mb-6 ">

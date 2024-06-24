@@ -62,13 +62,7 @@ export default function TypedString() {
   };
 
   return (
-    // make background color dark and text color light
-    <li
-      className="flex flex-col bg-gray-900 text-green-400 p-2"
-      style={{
-        marginTop: 16,
-      }}
-    >
+    <li className="bg-gray-900 text-green-400 p-2">
       {/* @ts-ignore */}
       <pre style={styles.pre} ref={(e) => (el = e)} />
     </li>

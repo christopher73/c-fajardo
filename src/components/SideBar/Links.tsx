@@ -11,8 +11,14 @@ export default function Links() {
     "flex flex-row p-2 text-base font-normal hover:bg-stone-200 hover:text-stone-900 text-stone-100";
 
   return (
-    <>
-      <li>
+    <div
+      style={{
+        flexDirection: "column",
+        display: "flex",
+        flex: 1,
+      }}
+    >
+      <li className="py-2 pt-6">
         <Link
           href="/"
           className="flex flex-row p-2 text-base font-normal text-stone-100 hover:bg-stone-200 hover:text-stone-900"
@@ -21,7 +27,7 @@ export default function Links() {
           <span className="ml-3">./</span>
         </Link>
       </li>
-      <li>
+      <li className="py-2">
         <Link
           href="/projects"
           className="flex flex-row p-2 text-base font-normal text-stone-100 hover:bg-stone-200 hover:text-stone-900"
@@ -30,7 +36,7 @@ export default function Links() {
           <span className="ml-3">./projects</span>
         </Link>
       </li>
-      <li>
+      <li className="py-2">
         <Link
           href="/stack"
           className="flex flex-row p-2 text-base font-normal text-stone-100 hover:bg-stone-200 hover:text-stone-900"
@@ -39,7 +45,7 @@ export default function Links() {
           <span className="ml-3">./stack</span>
         </Link>
       </li>
-      <li>
+      <li className="py-2">
         <Link
           href="/blog"
           className="flex flex-row p-2 text-base font-normal text-stone-100 hover:bg-stone-200 hover:text-stone-900"
@@ -48,6 +54,6 @@ export default function Links() {
           <span className="ml-3">./blog</span>
         </Link>
       </li>
-    </>
+    </div>
   );
 }
