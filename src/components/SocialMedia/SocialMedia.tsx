@@ -12,7 +12,7 @@ export default function SocialMedia() {
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
-          rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
+           shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.linkedin.com/in/cfajardo112/"
@@ -22,7 +22,7 @@ export default function SocialMedia() {
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
-          rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
+           shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://www.facebook.com/cffr90"
@@ -32,7 +32,7 @@ export default function SocialMedia() {
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
-          rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
+           shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="https://github.com/farm16"
@@ -42,7 +42,7 @@ export default function SocialMedia() {
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
-          rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
+           shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href="mailto: cfajardo112@gmail.com"
@@ -52,7 +52,7 @@ export default function SocialMedia() {
       <a
         className="inline-block p-1.5 text-white
          font-medium leading-tight 
-          rounded shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
+           shadow-md hover:bg-stone-200 hover:text-stone-900 bg-stone-900 m-2 transition duration-150 ease-in-out"
         rel="noopener noreferrer"
         target="_blank"
         href={"/assets/Christopher_Fajardo_resume_2024.pdf"}

@@ -10,7 +10,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: ["js.svg", "sequelize.svg", "express.svg", "bootstrap.svg"],
+        labels: ["js", "sequelize", "express", "bootstrap"],
         datasets: [
           {
             data: [9, 7, 6, 5, 8, 9],
@@ -77,14 +77,14 @@ export const allProjects = [
       type: "pie",
       data: {
         labels: [
-          "react.svg",
-          "redux.svg",
-          "node.svg",
-          "express.svg",
-          "aws.svg",
-          "stripe.svg",
-          "mongoose.svg",
-          "mongodb.svg",
+          "react",
+          "redux",
+          "node",
+          "express",
+          "aws",
+          "stripe",
+          "mongoose",
+          "mongodb",
         ],
         datasets: [
           {
@@ -163,13 +163,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "react.svg",
-          "redis.svg",
-          "node.svg",
-          "express.svg",
-          "bootstrap.svg",
-        ],
+        labels: ["react", "redis", "node", "express", "bootstrap"],
         datasets: [
           {
             data: [9, 9, 7, 6, 8],
@@ -234,13 +228,13 @@ export const allProjects = [
     gitLink: "https://github.com/farm16/bikeRental",
     externalLink: "https://tranquil-falls-97480.herokuapp.com/",
     isFeatured: true,
-    backgroundLink: "/assets/img/bikerental.svg",
+    backgroundLink: "/assets/img/bikerental",
     pictureLink: "/assets/img/bikerental.gif",
     year: "2019",
     chartPower: {
       type: "pie",
       data: {
-        labels: ["react.svg", "redux.svg", "material.svg", "bootstrap.svg"],
+        labels: ["react", "redux", "material", "bootstrap"],
         datasets: [
           {
             data: [9, 9, 7, 6],
@@ -309,12 +303,12 @@ export const allProjects = [
       type: "pie",
       data: {
         labels: [
-          "js.svg",
-          "cheerios.svg",
-          "mongoose.svg",
-          "mongodb.svg",
-          "bootstrap.svg",
-          "Dotenv.svg",
+          "js",
+          "cheerios",
+          "mongoose",
+          "mongodb",
+          "bootstrap",
+          "Dotenv",
         ],
         datasets: [
           {
@@ -386,13 +380,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "reactNative.svg",
-          "node.svg",
-          "express.svg",
-          "mongodb.svg",
-          "firebase.svg",
-        ],
+        labels: ["reactNative", "node", "express", "mongodb", "firebase"],
         datasets: [
           {
             data: [9, 6, 5, 6, 8],
@@ -462,13 +450,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "js.svg",
-          "node.svg",
-          "selenium.png",
-          "Dotenv.svg",
-          "mocha.png",
-        ],
+        labels: ["js", "node", "selenium.png", "Dotenv", "mocha.png"],
         datasets: [
           {
             data: [9, 9, 7, 6, 5],
@@ -541,14 +523,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "bash.svg",
-          "node.svg",
-          "js.svg",
-          "Dotenv.svg",
-          "spotify.png",
-          "momentjs.png",
-        ],
+        labels: ["bash", "node", "js", "Dotenv", "spotify.png", "momentjs.png"],
         datasets: [
           {
             data: [9, 9, 7, 6, 5, 8, 9],
@@ -620,14 +595,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "js.svg",
-          "html.svg",
-          "bootstrap.svg",
-          "jquery.svg",
-          "css3.svg",
-          "git.svg",
-        ],
+        labels: ["js", "html", "bootstrap", "jquery", "css3", "git"],
         datasets: [
           {
             data: [9, 9, 7, 6, 5, 8, 9],
@@ -696,14 +664,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "js.svg",
-          "html.svg",
-          "bootstrap.svg",
-          "jquery.svg",
-          "api.png",
-          "git.svg",
-        ],
+        labels: ["js", "html", "bootstrap", "jquery", "api.png", "git"],
         datasets: [
           {
             data: [9, 9, 7, 6, 5, 9],
@@ -772,13 +733,13 @@ export const allProjects = [
       type: "pie",
       data: {
         labels: [
-          "js.svg",
-          "express.svg",
-          "sequelize.svg",
-          "bootstrap.svg",
-          "mysql.svg",
-          "handlebars.svg",
-          "node.svg",
+          "js",
+          "express",
+          "sequelize",
+          "bootstrap",
+          "mysql",
+          "handlebars",
+          "node",
         ],
         datasets: [
           {
@@ -849,14 +810,7 @@ export const allProjects = [
     chartPower: {
       type: "pie",
       data: {
-        labels: [
-          "redux.svg",
-          "react.svg",
-          "psql.svg",
-          "sequelize.svg",
-          "express.svg",
-          "node.svg",
-        ],
+        labels: ["redux", "react", "psql", "sequelize", "express", "node"],
         datasets: [
           {
             data: [9, 9, 7, 6, 8, 9],

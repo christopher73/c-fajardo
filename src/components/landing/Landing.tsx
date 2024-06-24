@@ -25,7 +25,17 @@ export function Landing() {
       }}
     >
       <GifBackground word={word} />
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center flex-col">
+        <h1
+          className="text-4xl font-bold text-center mt-8 bg-stone-800 text-white p-4"
+          style={{ fontFamily: "monospace" }}
+        >
+          Hi, my name is <span className="text-green-300">Chris</span>
+          <br />
+          <span className="text-2xl italic text-stone-300 font-light">
+            I am a human who loves to code.
+          </span>
+        </h1>
         <Image
           layout="fixed"
           objectFit="contain"
@@ -33,16 +43,15 @@ export function Landing() {
           width={650}
           height={400}
           quality={100}
-          // layout="fixed"
-
           alt="chris-landing"
+          className="mx-4 shadow-lg my-4"
         />
       </div>
       <div className="flex flex-wrap justify-center">
         {landingPhrase.split(" ").map((word, index) => (
           <button
             key={index}
-            className="text-3xl bg-stone-800 hover:bg-stone-300 text-white hover:text-stone-800 font-bold py-2 px-4 m-2 "
+            className="text-3xl bg-stone-800 hover:bg-stone-300 text-white hover:text-stone-800 font-bold p-2 m-2"
             onClick={() => handleClick(word)}
           >
             #{word}
