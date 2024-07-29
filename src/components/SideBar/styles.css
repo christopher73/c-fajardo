@@ -1,0 +1,48 @@
+/* allow hover */
+.tab-bar-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 150ms ease-in-out;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+  color: rgb(21, 34, 3); /* brandColors.black */
+}
+
+.tab-bar-link-selected {
+  background-color: rgb(21, 34, 3); /* brandColors.black */
+  color: #f7f1d7; /* brandColors.cream */
+}
+
+.tab-bar-link:hover {
+  background-color: rgb(21, 34, 3); /* brandColors.black */
+  color: #f7f1d7; /* brandColors.cream */
+}
+
+.with-stripes {
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    /* Angle of the stripes */ rgb(233, 88, 56) 25%,
+    /* rgb(233, 88, 56) color for the first 25% */ #f7f1d7 25%,
+    /* #f7f1d7 color starts at 25% */ #f7f1d7 50%,
+    /* #f7f1d7 color extends to 50% */ rgb(233, 88, 56) 50%,
+    /* rgb(233, 88, 56) color starts at 50% */ rgb(233, 88, 56) 75%,
+    /* rgb(233, 88, 56) color extends to 75% */ #f7f1d7 75%,
+    /* #f7f1d7 color starts at 75% */ #f7f1d7 100%
+      /* Black color extends to 100% */
+  );
+  background-size: 20px 20px; /* Adjust the size of the stripes */
+  border: 2.3px solid rgb(21, 34, 3); /* brandColors.cream */
+}
+
+.cream-background {
+  background-color: #f7f1d7; /* brandColors.cream */
+  /* margin: 0px 10px 0px 10px; */
+  /* height: 100%; */
+  border: 2.3px solid rgb(21, 34, 3); /* brandColors.cream */
+}

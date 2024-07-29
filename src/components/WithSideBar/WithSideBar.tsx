@@ -12,20 +12,5 @@ export function WithSideBar({ children }: { children: React.ReactNode }) {
     },
   };
 
-  return (
-    <div>
-      <SideBar />
-      <div
-        className="sm:ml-64"
-        style={{
-          height: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-          display: "flex",
-        }}
-      >
-        {children}
-      </div>
-    </div>
-  );
+  return <SideBar>{children}</SideBar>;
 }

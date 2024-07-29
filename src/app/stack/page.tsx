@@ -7,14 +7,14 @@ export default function Stack() {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <div
-      className="container py-24 mx-auto"
+      className="flex flex-col items-center justify-center h-full w-full p-4"
       style={{
         backgroundColor: darkMode ? "black" : "white",
         color: darkMode ? "white" : "black",
-        width: "100%",
       }}
     >
-      <section className=" text-center">
+      <h1 className="text-5xl font-bold p-4">Stack</h1>
+      <section className="text-center">
         <h2 className="text-3xl font-bold mb-12">PROGRAMING LANGUAGES</h2>
         <div className="grid lg:gap-x-12 md:grid-cols-3">
           <div className="mb-12 md:mb-0">
@@ -26,7 +26,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">Javascript</h3>
+            <h3 className="text-2x4 font-bold  mb-4">Javascript</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -37,7 +37,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">TypeScript</h3>
+            <h3 className="text-2x4 font-bold  mb-4">TypeScript</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -48,7 +48,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">C++</h3>
+            <h3 className="text-2x4 font-bold  mb-4">C++</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -59,7 +59,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">Bash</h3>
+            <h3 className="text-2x4 font-bold  mb-4">Bash</h3>
           </div>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">React</h3>
+            <h3 className="text-2x4 font-bold  mb-4">React</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -86,7 +86,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">React Native</h3>
+            <h3 className="text-2x4 font-bold  mb-4">React Native</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -97,7 +97,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">Redux</h3>
+            <h3 className="text-2x4 font-bold  mb-4">Redux</h3>
           </div>
           <div className="mb-12 md:mb-0">
             <div className="p-4 bg-gradient-to-r from-slate-300 rounded-full shadow-lg inline-block mb-6">
@@ -108,7 +108,7 @@ export default function Stack() {
                 width={80}
               />
             </div>
-            <h3 className="text-2xl font-bold  mb-4">ExpressJS</h3>
+            <h3 className="text-2x4 font-bold  mb-4">ExpressJS</h3>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useContext, useState } from "react";
 import { GifBackground } from "../GifBackground/GifBackground";
 import { DarkModeContext } from "../WithDarkMode/WithDarkMode";
+import "./styles.css";
 
 export function Landing() {
   const [word, setWord] = useState(getRandomWord(programmingWords));
@@ -14,49 +15,39 @@ export function Landing() {
   const landingPhrase = "family ramen tech NYC knicks sushi code";
 
   return (
-    <div
-      style={{
-        //background: "red",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        height: "100vh",
-        width: "100%",
-      }}
-    >
+    <div className="flex flex-col items-center justify-center h-full w-full">
       <GifBackground word={word} />
-      <div className="flex justify-center items-center flex-col">
-        <h1
-          className="text-4xl font-bold text-center mt-8 bg-stone-800 text-white p-4"
-          style={{ fontFamily: "monospace" }}
-        >
-          Hi, my name is <span className="text-green-300">Chris</span>
-          <br />
-          <span className="text-2xl italic text-stone-300 font-light">
-            I am a human who loves to code.
-          </span>
-        </h1>
-        <Image
-          layout="fixed"
-          objectFit="contain"
-          src="/assets/img/chris.png"
-          width={650}
-          height={400}
-          quality={100}
-          alt="chris-landing"
-          className="mx-4 shadow-lg my-4"
-        />
-      </div>
-      <div className="flex flex-wrap justify-center">
-        {landingPhrase.split(" ").map((word, index) => (
-          <button
-            key={index}
-            className="text-3xl bg-stone-800 hover:bg-stone-300 text-white hover:text-stone-800 font-bold p-2 m-2"
-            onClick={() => handleClick(word)}
-          >
-            #{word}
-          </button>
-        ))}
+      <div className="main">
+        <div className="main-image">
+          <Image
+            layout="fixed"
+            objectFit="contain"
+            src="/assets/img/animated_me.jpg"
+            width={250}
+            height={200}
+            quality={100}
+            alt="chris-landing"
+            className="mx-4 shadow-lg my-4"
+          />
+        </div>
+        <div className="main-title">
+          <h1 className="main-title-text">
+            Hi, my name is <span id="chris">Chris</span> 👋🏽
+            <br />
+            <span>I am a human who loves to code.</span>
+          </h1>
+        </div>
+        <div className="flex flex-wrap justify-center w-8/12">
+          {landingPhrase.split(" ").map((word, index) => (
+            <button
+              key={index}
+              className="hash-tag-button text-2xl font-bold p-2 m-2"
+              onClick={() => handleClick(word)}
+            >
+              #{word}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
+import { useWindowSize } from "@/tools/hooks";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../WithDarkMode/WithDarkMode";
 
-const LIMIT = 15;
+const LIMIT = 16;
 
 type GifBackgroundProps = {
   word: string;
@@ -10,8 +11,13 @@ type GifBackgroundProps = {
 export const GifBackground = (props: GifBackgroundProps) => {
   const { word } = props;
   const { darkMode } = useContext(DarkModeContext);
+  const size = useWindowSize();
+  const gifWidthPercent = (size.width ?? 0) > 600 ? 4 : 2;
+  const gifHeightPercent = 4;
+  const gifWidth = size.width ? size.width / gifWidthPercent - 5 : 100;
+  const gifHeight = size.height ? size.height / gifHeightPercent : 100;
 
-  const fetchGiphyAPI = async (word: string) => {
+  const fetchGifAPI = async (word: string) => {
     const res = await fetch(
       `https://api.giphy.com/v1/gifs/search?api_key=wqmUbKlFSgVu8OkDO8C3uIJyW7baVW48&q=${word}&limit=${LIMIT}&offset=0&rating=g&lang=en`
     );
@@ -24,8 +30,7 @@ export const GifBackground = (props: GifBackgroundProps) => {
   useEffect(() => {
     async function getData() {
       if (word !== "") {
-        let data = await fetchGiphyAPI(word);
-
+        let data = await fetchGifAPI(word);
         setBlocks(data);
       } else {
         setBlocks([]);
@@ -36,21 +41,23 @@ export const GifBackground = (props: GifBackgroundProps) => {
 
   console.log(">>>", blocks[0]);
 
-  // add oppacity to the background
+  // add opacity to the background
   const css: React.CSSProperties = {
     display: "flex",
-    flexDirection: "row",
     flexWrap: "wrap",
+    position: "absolute",
     justifyContent: "center",
     alignItems: "center",
-    position: "fixed",
-    width: "100%",
-    height: "100%",
-
-    // top: 0,
-    // left: 0,
+    top: 0,
+    left: 0,
+    right: 0,
     zIndex: -1,
-    background: darkMode ? "#000" : "#fff",
+    // justifyContent: "center",
+    // alignItems: "center",
+    // position: "fixed",
+    // width: "100%",
+    // height: "100%",
+    // background: darkMode ? "#000" : "#fff",
     opacity: 0.5,
   };
 
@@ -64,9 +71,12 @@ export const GifBackground = (props: GifBackgroundProps) => {
             key={i}
             alt={elem.title}
             src={elem.images.original.url}
-            layout="fixed"
-            height={250}
-            width={250}
+            height={gifWidth}
+            width={gifHeight}
+            style={{
+              width: gifWidth,
+              height: gifHeight,
+            }}
             objectFit="cover"
             quality={100}
           />

@@ -26,12 +26,13 @@ export default function Blog() {
 
   return (
     <div
+      className="flex flex-col items-center justify-center h-full w-full p-4"
       style={{
         backgroundColor: darkMode ? "black" : "white",
         color: darkMode ? "white" : "black",
-        width: "100%",
       }}
     >
+      <h1 className="text-5xl font-bold p-4">Blog</h1>
       <div className="flex justify-center flex-col items-center">
         <div
           className="bg-yellow-100 self-center text-center rounded-lg p-2 text-base text-yellow-700 mb-3 my-10"
